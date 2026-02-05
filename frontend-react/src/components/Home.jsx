@@ -1,8 +1,9 @@
-import React from "react";
+
 
 const Home = () => {
   return (
     <>
+    
       <div className="container">
         <div className="p-5 text-center bg-light-dark rounded">
           <h1 className="text-light">stock prediction</h1>
@@ -18,6 +19,7 @@ const Home = () => {
           <button text="Login" class="btn-outline-danger">Login</button>
         </div>
       </div>
+      
     </>
   );
 };
