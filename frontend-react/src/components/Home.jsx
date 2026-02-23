@@ -1,4 +1,4 @@
-
+import Button from "./Button";
 
 const Home = () => {
   return (
@@ -16,7 +16,7 @@ const Home = () => {
             behavior and make informed investment decisions through data-driven
             insights.
           </p>
-          <button text="Login" class="btn-outline-danger">Login</button>
+          <Button text="Explore Now" className="btn-outline-danger" url ="/dashboard" />
         </div>
       </div>
       
