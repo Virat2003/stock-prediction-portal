@@ -54,11 +54,11 @@ const Login = () => {
                 <h3 className='text-light text-center mb-4'>Login to our Portal</h3>
                 <form onSubmit={handleSubmit}>
                   <div className='mb-3'>
-                    <input type="text" className='form-control' placeholder='Username' onChange={(e)=>setUsername(e.target.value)} />
+                    <input type="text" className='form-control' placeholder='Username' onChange={(e)=>setUsername(e.target.value)} required />
                   </div>
                     
                     <div className='mb-3'>
-                    <input type="password" className='form-control ' placeholder='Password' onChange={(e)=>setPassword(e.target.value)} />
+                    <input type="password" className='form-control ' placeholder='Password' onChange={(e)=>setPassword(e.target.value)} required/>
                     </div>
 
                     { errors && <div className='text-danger'>{errors}</div> }

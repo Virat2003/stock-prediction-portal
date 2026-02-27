@@ -5,7 +5,7 @@ const footer = () => {
     <>
         <footer className='text-light footer py-3 my3'>
             <hr />
-            <p className='text-center'>&copy;2024-Built with by virat rane</p>
+            <p className='text-center'>&copy;2026-Built with by virat rane</p>
         </footer>
 
 
