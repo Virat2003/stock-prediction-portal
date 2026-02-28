@@ -2,8 +2,10 @@ FROM python:3.10
 
 WORKDIR /app
 
-COPY . .
+# Copy backend folder into container
+COPY backend-drf /app
 
+# Install dependencies
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
