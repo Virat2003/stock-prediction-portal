@@ -19,7 +19,7 @@ const DashBoard = () => {
   const [signal, setSignal] = useState("")
   const [confidence, setConfidenScore] = useState('')
 
-
+  const backendRoot = import.meta.env.VITE_API_URL
   const fetchProtectedData = async () => {
     try {
       const response = await axiosInstance.get('/protected-view/')
@@ -66,7 +66,7 @@ const DashBoard = () => {
       // ✅ No error → set data
       setError("")
 
-      const backendRoot = import.meta.env.VITE_BACKEND_ROOT
+      const backendRoot = import.meta.env.VITE_API_URL
       const plotUrl = `${backendRoot}${response.data.plot_img}`
       const ma100url = `${backendRoot}${response.data.plt_100_ma}`
       const ma200url = `${backendRoot}${response.data.plt_200_ma}`
