@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import axios from "axios"
+import axiosInstance from "../../axiosInstance"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSpinner } from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from 'react-router-dom'
@@ -26,7 +26,7 @@ const Register =  () => {
     // console.log(userData);
 
     try{
-        const response  = await axios.post("http://127.0.0.1:8000/api/v1/register/", userData)
+        const response = await axiosInstance.post("/register/", userData)
         const data = await response.data
         console.log(data);
         console.log("registration successful");
