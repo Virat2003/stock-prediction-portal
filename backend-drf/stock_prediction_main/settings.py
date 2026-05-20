@@ -136,7 +136,8 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 CORS_ALLOWED_ORIGINS = [
-    "https://stock-prediction-portal-t8m9-hq7ysterl-virat-projects.vercel.app",
+    # "https://stock-prediction-portal-t8m9-hq7ysterl-virat-projects.vercel.app"
+    "http://localhost:5173",
 ]
 
 REST_FRAMEWORK = {
